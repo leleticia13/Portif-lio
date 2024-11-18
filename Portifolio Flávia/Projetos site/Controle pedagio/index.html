@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Controle Pedágio</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Pedágio</h1>
+
+        <div class="input-group">
+            <label for="placaid" class="placa">Placa do carro</label>
+            <input type="text" id="placaid" class="pp">
+        </div>
+
+        <div class="sub">
+            <div class="input-group">
+                <label class="inicio">Hora Início</label>
+                <div class="time-input">
+                    <input type="text" id="hinicioid" class="hi" placeholder="HH"> :
+                    <input type="text" id="minicio" class="hi" placeholder="MM">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label class="hf1">Hora Fim</label>
+                <div class="time-input">
+                    <input type="text" id="hfim" class="hf" placeholder="HH"> :
+                    <input type="text" id="mfim" class="hf" placeholder="MM">
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button onclick="calcular()" class="cc">Calcular</button>
+            <button onclick="finalizar()" class="cc">Finalizar</button>
+        </div>
+
+        <h2 id="result" class="result"></h2>
+
+    </div>
+</body>
+</html>
